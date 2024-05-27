@@ -104,3 +104,38 @@ nav ul li button:hover {
 
 .hobby-right {
     background-color: var(--hobby-b
+/* Add alternating background colors and change alignment */
+.hobby:nth-child(odd) {
+    background-color: var(--hobby-bg-color-1); /* Light mode background color */
+    text-align: right;
+}
+
+.hobby:nth-child(even) {
+    background-color: var(--hobby-bg-color-2); /* Light mode background color */
+    text-align: left;
+}
+
+@media (prefers-color-scheme: dark) {
+    /* Dark mode background colors */
+    .hobby:nth-child(odd) {
+        background-color: var(--hobby-bg-color-2);
+    }
+
+    .hobby:nth-child(even) {
+        background-color: var(--hobby-bg-color-1);
+    }
+}
+
+/* Center the first part in the About Me section */
+.info {
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info h2 {
+    margin-right: 20px; /* Adjust spacing between text and image */
+}
+
