@@ -9,8 +9,6 @@
     --nav-hover-bg-color: #e0e0e0;
     --hobby-bg-color-1: #f9f9f9;
     --hobby-bg-color-2: #e9e9e9;
-    --hobby-bg-color-3: #f0f9f9; /* New background color for hobby sections */
-    --hobby-bg-color-4: #e0e9f9; /* New background color for hobby sections */
 }
 
 body {
@@ -72,66 +70,20 @@ nav ul li button:hover {
     border-radius: 50%; /* Make images round */
 }
 
-.toggle-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: transparent;
-    border: none;
-    font-size: 24px;
-    cursor: pointer;
-}
-
-.toggle-button:focus {
-    outline: none;
-}
-
-.dark-mode {
-    --bg-color: #181818;
-    --text-color: #f0f0f0;
-    --header-bg-color: #282828;
-    --button-bg-color: #505050;
-    --button-text-color: #f0f0f0;
-    --nav-bg-color: #282828;
-    --nav-text-color: #f0f0f0;
-    --nav-hover-bg-color: #383838;
-    --hobby-bg-color-1: #202020;
-    --hobby-bg-color-2: #303030;
-}
-
+/* Change background color and alignment for hobby sections */
 .hobby {
     padding: 20px;
     transition: background-color 0.5s;
+    text-align: center;
 }
 
 .hobby-right {
-    background-color: var(--hobby-bg-color-1);
+    background-color: var(--hobby-bg-color-1); /* Change background color */
     text-align: right;
 }
 
 .hobby-left {
-    background-color: var(--hobby-bg-color-2);
+    background-color: var(--hobby-bg-color-2); /* Change background color */
     text-align: left;
 }
 
-.hobby-right:nth-child(odd) {
-    background-color: var(--hobby-bg-color-3); /* Alternate background color */
-}
-
-.hobby-left:nth-child(even) {
-    background-color: var(--hobby-bg-color-4); /* Alternate background color */
-}
-
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-    }
-
-    .hobby {
-        text-align: center;
-    }
-
-    .hobby img {
-        margin: 0 auto;
-    }
-}
