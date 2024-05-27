@@ -75,17 +75,14 @@ button:hover {
 
 nav {
     background-color: var(--nav-bg-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    padding: 10px 0;
+    text-align: center;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
-    text-align: center;
 }
 
 nav ul li {
@@ -95,7 +92,7 @@ nav ul li {
 nav ul li button {
     background-color: transparent;
     color: var(--nav-text-color);
-    border: 2px solid var(--nav-text-color);
+    border: none;
     padding: 10px 20px;
     cursor: pointer;
     font-size: 18px;
@@ -125,4 +122,10 @@ nav ul li button:hover {
 .hobby-left {
     background-color: var(--hobby-bg-color-2);
     text-align: left;
+}
+
+@media (max-width: 768px) {
+    .hobby {
+        text-align: center !important;
+    }
 }
