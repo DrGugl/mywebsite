@@ -76,7 +76,6 @@ button:hover {
 nav {
     background-color: var(--nav-bg-color);
     display: flex;
-    flex-direction: column;
     align-items: center;
     padding: 10px;
 }
@@ -85,10 +84,12 @@ nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-direction: row; /* Changed from column to row */
 }
 
 nav ul li {
-    margin: 10px 0;
+    margin: 0 10px; /* Adjusted margin for horizontal spacing */
 }
 
 nav ul li button {
@@ -127,7 +128,7 @@ nav ul li button:hover {
 
 @media (max-width: 768px) {
     nav ul {
-        flex-direction: column;
+        flex-direction: column; /* Keeps column layout for smaller screens */
     }
 
     .hobby {
