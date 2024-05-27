@@ -27,6 +27,39 @@ header {
     transition: background-color 0.5s;
 }
 
+/* Centering the menu buttons horizontally */
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px; /* Adjusted margin for horizontal spacing */
+}
+
+/* Ensure all menu buttons align horizontally */
+nav ul li button {
+    background-color: var(--nav-bg-color);
+    color: var(--nav-text-color);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+nav ul li button:hover {
+    background-color: var(--nav-hover-bg-color);
+}
+
+/* Adjust image sizes and make them round */
 .info img,
 .hobby img {
     max-width: 100%;
@@ -34,7 +67,7 @@ header {
     max-height: 200px; /* Adjust as needed */
     object-fit: cover;
     object-position: center;
-    border-radius: 5px; /* Optional: Adds rounded corners */
+    border-radius: 50%; /* Make images round */
 }
 
 .toggle-button {
@@ -64,72 +97,10 @@ header {
     --hobby-bg-color-2: #303030;
 }
 
-nav {
-    background-color: var(--nav-bg-color);
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
-nav ul li {
-    margin: 0 10px; /* Adjusted margin for horizontal spacing */
-}
-
-nav ul li button {
-    background-color: var(--nav-bg-color);
-    color: var(--nav-text-color);
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 18px;
-    transition: background-color 0.3s;
-}
-
-nav ul li button:hover {
-    background-color: var(--nav-hover-bg-color);
-}
-
 .hobby {
     padding: 20px;
     transition: background-color 0.5s;
 }
 
-.hobby img {
-    max-width: 100%;
-    height: auto;
-    max-height: 200px; /* Adjust as needed */
-    object-fit: cover;
-    object-position: center;
-    border-radius: 5px; /* Optional: Adds rounded corners */
-}
-
 .hobby-right {
-    background-color: var(--hobby-bg-color-1);
-    text-align: right;
-}
-
-.hobby-left {
-    background-color: var(--hobby-bg-color-2);
-    text-align: left;
-}
-
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-    }
-
-    .hobby {
-        text-align: center;
-    }
-
-    .hobby img {
-        margin: 0 auto;
-    }
-}
+    background-color: var(--hobby-b
