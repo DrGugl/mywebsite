@@ -70,20 +70,37 @@ nav ul li button:hover {
     border-radius: 50%; /* Make images round */
 }
 
-/* Change background color and alignment for hobby sections */
+.toggle-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.toggle-button:focus {
+    outline: none;
+}
+
+.dark-mode {
+    --bg-color: #181818;
+    --text-color: #f0f0f0;
+    --header-bg-color: #282828;
+    --button-bg-color: #505050;
+    --button-text-color: #f0f0f0;
+    --nav-bg-color: #282828;
+    --nav-text-color: #f0f0f0;
+    --nav-hover-bg-color: #383838;
+    --hobby-bg-color-1: #202020;
+    --hobby-bg-color-2: #303030;
+}
+
 .hobby {
     padding: 20px;
     transition: background-color 0.5s;
-    text-align: center;
 }
 
 .hobby-right {
-    background-color: var(--hobby-bg-color-1); /* Change background color */
-    text-align: right;
-}
-
-.hobby-left {
-    background-color: var(--hobby-bg-color-2); /* Change background color */
-    text-align: left;
-}
-
+    background-color: var(--hobby-b
